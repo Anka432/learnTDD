@@ -6,75 +6,75 @@ import org.junit.Test;
 public class MatchTest {
 
     @Test
-    public void findMaxTest(){
+    public void testFindMax(){
         //is
-        int[]numbers={2,5,19,76,102,1,15,84};
+        int []numbers={4,8,6,44,62,-17,43,0,8};
 
         //then
         int max = Math.findMax(numbers);
 
         //expected
-        Assert.assertEquals(max,102);
+        Assert.assertEquals(max,62);
     }
 
     @Test
-    public void calculateSumTest(){
+    public void testCalculateSun(){
 
         //is
-        int []numbers= {1,2,3};
+        int []numbers = {4,3,7};
 
         //then
         int sum = Math.calculateSum(numbers);
 
         //expected
-        Assert.assertEquals(sum,6);
+        Assert.assertEquals(sum,14);
     }
 
     @Test
-    public void calculateAverageTest(){
+    public void testCalculateAverage(){
+
         //is
-        int[]numbers={1,2,3};
+        int []values = {1,3,5};
 
         //then
-        float average = Math.calculateAverage(numbers);
+        float average = Math.calculateAverage(values);
 
         //expected
-        Assert.assertEquals(average,2,0.1);
+        Assert.assertEquals(average,3,0.01);
     }
-
     @Test
-    public void calculateSilnia(){
+    public void testCalculateSilnia(){
         //is
-        int number=5;
+        int value = 5;
 
         //then
-        int silnia = Math.calculateSilnia(number);
+        int silnia = Math.calculateSilnia(value);
 
         //expected
         Assert.assertEquals(silnia,120);
     }
 
     @Test
-    public void multiply(){
+    public void testMultiply(){
         //is
-        int []numbers={3,6,2};
+        int[]values={2,3,4};
 
         //then
-        int multiply = Math.multiply(numbers);
+        int multiply = Math.multiply(values);
 
         //expected
-        Assert.assertEquals(multiply,36);
+        Assert.assertEquals(multiply,24);
     }
 
     @Test
-    public  void findMin(){
+    public void testfindMin() {
         //is
-        int []numbers={-7,8,147,-12,46,99};
+        int[] numbers = {5, 9, -16, 12, 8,  55};
 
         //then
-        int min = Math.fintMin(numbers);
+        int min = Math.findMin(numbers);
 
         //expected
-        Assert.assertEquals(min,-12);
+        Assert.assertEquals(min, -16);
     }
 }

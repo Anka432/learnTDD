@@ -3,67 +3,68 @@ package math;
 
 public class Math {
 
-   public static int findMax(int []numbers){
-       int max = Integer.MIN_VALUE;
-       for (int each:numbers
-            ) {
-           if(each>max){
-               max=each;
-           }
-       }
 
-       return max;
-   }
+    public static int findMax(int []numbers){
+        int max=Integer.MIN_VALUE;
+        for (int each:numbers
+             ) {
+            if (max<each){
+                max=each;
+            }
+        }
 
-   public static int calculateSum(int []numbers){
+        return max;
+    }
 
-       int sum = 0;
-       for (int each:numbers
-            ) {
-           sum+=each;
-       }
-       return sum;
-   }
 
-   public static float calculateAverage(int []numbers){
+    public static int calculateSum(int []values){
+        int sum=0;
+        for (int item:values) {
+            sum += item;
+        }
+        return sum;
+    }
 
-       float average=0;
-       int sum=0;
-       for (int each:numbers
-            ) {
-           sum+=each;
-       }
-       average =sum/numbers.length;
+    public static float calculateAverage(int []values){
+        float average = 0;
+        int sum = 0;
 
-       return average;
-   }
+        for (int each: values){
+            sum+=each;
+        }
+        average=sum/values.length;
 
-   public static int calculateSilnia(int number){
-       int silnia=1;
-       for (int i=2; i<=number; i++){
-           silnia=silnia*i;
-       }
+        return average;
+    }
 
-       return silnia;
-   }
+    public static int calculateSilnia(int value){
 
-   public static int multiply(int[]numbers){
-       int resoult = 1;
-       for (int each:numbers){
-           resoult*=each;
-       }
-       return resoult;
-   }
+        int silnia = 1;
+        for (int i=1;i<=value;i++){
+            silnia*=i;
+        }
 
-   public static int findMin(int []numbers){
-       int min=Integer.MAX_VALUE;
-       for (int each:numbers){
-           if(each<min){
-               min=each;
-           }
-       }
-       return min;
-   }
+        return silnia;
+    }
+
+    public static int multiply(int []value){
+        int result=1;
+        for (int each:value
+             ) {
+            result*=each;
+        }
+        return result;
+    }
+
+    public static int findMin(int []values){
+
+        int min = Integer.MAX_VALUE;
+        for (int each:values)
+        if(each<min){
+            min=each;
+        }
+        return min;
+    }
 
 }
 
