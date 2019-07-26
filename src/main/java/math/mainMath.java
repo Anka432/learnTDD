@@ -8,7 +8,9 @@ public class mainMath {
         System.out.println(Math.multiply(numbers));
 
         int []numbers2={-7,8,147,-12,46,99};
-        System.out.println(Math.fintMin(numbers2));
+        System.out.println(Math.findMin(numbers2));
+
+
 
     }
 }
