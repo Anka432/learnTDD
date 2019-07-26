@@ -55,7 +55,7 @@ public class Math {
        return resoult;
    }
 
-   public static int fintMin(int []numbers){
+   public static int findMin(int []numbers){
        int min=Integer.MAX_VALUE;
        for (int each:numbers){
            if(each<min){
